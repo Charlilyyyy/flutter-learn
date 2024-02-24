@@ -11,25 +11,17 @@ class Dashboard extends StatelessWidget{
           title: Text('Dashboard'.toUpperCase()),
           backgroundColor: Colors.blueGrey,
         ),
-        body: Center(
-          child: 
-          // Text.rich(
-          //   TextSpan(
-          //     text: 'My', 
-          //     children: [
-          //       TextSpan(
-          //         text: 'Flutter',
-          //         style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold)
-          //       ),
-          //       TextSpan(
-          //         text: 'App',
-          //         style: TextStyle(fontSize: 30.0, color: Colors.blue[400])
-          //       ),
-          //     ]
-          //     )
-          //   ),
-          Text('Random value is: ${getNumber()}')
-        ),
+        body: 
+        // Image.asset("path"),
+        // Image.network("path"),
+        Image(
+          image: AssetImage("images/th.jpeg"),
+          // image:
+          width: 800.0,
+          height: 300.0,
+
+          // image: NetworkImage("https://tse1.mm.bing.net/th?id=OIP.Ddrn76R4x07_V3ZKJNbtywHaEK&pid=Api&P=0&h=220"),
+        )
       );
   }
 }
